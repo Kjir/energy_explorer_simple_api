@@ -23,6 +23,8 @@ def list_scenarios():
 
 def load_scenarios():
     global scenario_db
+    if len(scenario_db) != 0:
+        return
     scenario_files = os.listdir("./data")
     scenario_db = {
         f"Scenario {i}": format_scenario(scenario)
