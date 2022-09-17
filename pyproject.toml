@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "energy-explorer-simple-api"
+version = "0.1.0"
+description = ""
+authors = ["Stéphane Bisinger <stephane@sbisinger.ch>"]
+readme = "README.md"
+packages = [{include = "energy_explorer_simple_api"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.85.0"
+uvicorn = "^0.18.3"
+pandas = "^1.4.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
